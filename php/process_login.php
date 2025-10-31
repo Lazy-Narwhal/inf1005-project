@@ -1,6 +1,6 @@
 <?php
-include "inc/head.inc.php";
-include "inc/nav.inc.php";
+include "../inc/head.inc.php";
+include "../inc/nav.inc.php";
 
 $email = $pwd = "";
 $errorMsg = "";
@@ -129,12 +129,12 @@ validate_and_process_form();
             <p>The following errors were detected:</p>
             <p class="mb-0"><?php echo $errorMsg; ?></p>
         </div>
-        <a href="/login.php" class="btn btn-danger">Return to Login</a>
+        <a href="./login.php" class="btn btn-danger">Return to Login</a>
     <?php
     }
     ?>
 </main>
 
 <?php
-include "inc/footer.inc.php";
+include "../inc/footer.inc.php";
 ?>

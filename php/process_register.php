@@ -1,6 +1,6 @@
 <?php
-include "inc/head.inc.php";
-include "inc/nav.inc.php";
+include "../inc/head.inc.php";
+include "../inc/nav.inc.php";
 
 $fname = $lname = $email = $pwd = $pwd_confirm = $hashed_pwd = "";
 $errorMsg = "";
@@ -163,12 +163,12 @@ validate_and_process_form();
             <p>We detected the following issues with your submission:</p>
             <p class="mb-0"><?php echo $errorMsg; ?></p>
         </div>
-        <a href="/register.php" class="btn btn-danger">Return to Sign Up</a>
+        <a href="./register.php" class="btn btn-danger">Return to Sign Up</a>
     <?php
     }
     ?>
 </main>
 
 <?php
-include "inc/footer.inc.php";
+include "../inc/footer.inc.php";
 ?>

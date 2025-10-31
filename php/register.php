@@ -2,18 +2,18 @@
 <html lang="en">
 
 <?php
-include "inc/head.inc.php"
+include "../inc/head.inc.php"
 ?>
 
 <body>
     <?php
-    include "inc/nav.inc.php";
+    include "../inc/nav.inc.php";
     ?>
     <main class="container">
         <h1>Member Registration</h1>
         <p>
             Already have an account?
-            <a href="/login.php"> Login</a>.
+            <a href="./login.php"> Login</a>.
         </p>
         <form action="process_register.php" method="post">
             <div class="mb-3">
@@ -53,6 +53,6 @@ include "inc/head.inc.php"
         </form>
     </main>
     <?php
-    include "inc/footer.inc.php";
+    include "../inc/footer.inc.php";
     ?>
 </body>

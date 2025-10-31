@@ -12,10 +12,10 @@
 
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="/#dogs">Dogs</a>
+                    <a class="nav-link" href="/#">nav1</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/#cats">Cats</a>
+                    <a class="nav-link" href="/#">nav2</a>
                 </li>
             </ul>
 
