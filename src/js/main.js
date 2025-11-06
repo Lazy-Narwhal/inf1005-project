@@ -1,0 +1,71 @@
+document.addEventListener("DOMContentLoaded", function()
+{
+    registerEventListeners();
+});
+
+function registerEventListeners()
+{
+    var imgs = document.getElementsByClassName("img-thumbnail")
+
+    if (imgs !== null && imgs.length > 0)
+    {
+        for (var i = 0; i < imgs.length; i++)
+        {
+            var img = imgs[i]
+            img.addEventListener("click", thumbnail)
+        }
+    }
+    else
+    {
+        console.log("No imgs found")
+    }
+}
+
+function thumbnail(e)
+{
+    // Name of current image
+    const img_name = e.target.src
+    const popup = document.getElementById("popup")
+    if (popup === null)
+    {
+        console.log(img_name)
+        const temp_name = img_name.split("/")[4]
+        console.log(temp_name)
+        const new_name = "images/" + temp_name.split("_")[0] + "_large.jpg";
+        console.log(new_name)
+        
+        
+        const newSpan = document.createElement("span");
+        newSpan.className = "thumbnail";
+        newSpan.setAttribute("id","popup")
+
+        const thumbnail = document.createElement("img");
+        thumbnail.src = new_name;
+        thumbnail.className = "thumbnail show"
+
+        newSpan.appendChild(thumbnail)
+
+        e.target.insertAdjacentElement("afterend", newSpan)
+    }
+    else
+    {
+        popup.remove();
+    }
+
+}
+
+/*
+* This function sets the currently selected menu item to the 'active' state.
+* It should be called whenever the page first loads.
+*/
+function activateMenu()
+{
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link =>
+    {
+        if (link.href === location.href)
+        {
+            link.classList.add('active');
+        }
+    })
+}
