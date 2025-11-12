@@ -1,16 +1,15 @@
-<!-- Credits to Colorlib -->
+<!-- Template from Colorlib https://colorlib.com/wp/template/calendar-04/ -->
 <div class="row">
-    <div class="col-md-12">
-        <div class="content w-100">
+    <div class="content w-100">
         <div class="calendar-container">
             <div class="calendar table-responsive">
-            <!-- TODO: ADD SMALL YEAR, ENLARGE MONTHS, FIX DAYS COLOR, ENSURE ONLY FUTURE DATES CAN BE PICKED --> 
-            <!-- <div class="year-header">  -->
-            <!--   <span class="left-button fa fa-chevron-left" id="prev"> </span> -->
-            <!--     <span class="year" id="label"></span> -->
-            <!--     <span class="right-button fa fa-chevron-right" id="next"> </span> -->
-            <!-- </div> -->
-            <table class="months-table w-100"> 
+            <!-- TODO: FIGURE OUT WHERE TO PLACE SMALL YEAR, ENSURE ONLY FUTURE DATES CAN BE PICKED --> 
+            <div class="month-header"> 
+              <span class="left-button fa fa-chevron-left" id="prev">&lt;</span>
+                <span class="month" id="label"></span>
+                <span class="right-button fa fa-chevron-right" id="next">&gt; </span>
+            </div>
+            <!-- <table class="months-table w-100"> 
                 <tbody>
                 <tr class="months-row">
                     <td class="month">Jan</td> 
@@ -27,7 +26,7 @@
                     <td class="month">Dec</td>
                 </tr>
                 </tbody>
-            </table> 
+            </table>  -->
 
             <table class="table table-bordered table-dark text-center"> 
                 <td class="table-primary">Sun</td> 
@@ -44,10 +43,11 @@
                     </tbody> 
                 </table>
             </div> 
-            <button class="button" id="add-button">Add Event</button>
+            <!-- <button class="button" id="add-button">Add Event</button> -->
             </div>
         </div>
         <div class="events-container">
+            <!-- JS populates here -->
         </div>
         <div class="dialog" id="dialog">
             <h2 class="dialog-header"> Add New Event </h2>
@@ -61,7 +61,6 @@
                 <input type="button" value="OK" class="button button-white" id="ok-button">
                 </div>
             </form>
-            </div>
         </div>
     </div>
 </div>
