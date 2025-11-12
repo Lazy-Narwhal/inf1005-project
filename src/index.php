@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Esacpe Quest</title>
+        <title>Something like that</title>
         <?php
             include "inc/head.inc.php"
         ?>
@@ -13,13 +13,10 @@
         <?php
             include "inc/header.inc.php"
         ?>
-        <main>
-            <!-- add ur code here -->
-        </main>
         <?php
             include "inc/footer.inc.php"
         ?>
     
+    <!-- Here's the flag CTF{HTML_1s_fun!} -->
     </body>
-
 </html>
