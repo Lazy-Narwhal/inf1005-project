@@ -8,16 +8,7 @@
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
     crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
-<!--
-<style>
-    body {
-        background-image: url(images/surprise.jpg);
-        background-size: cover;
-        background-position: center 125px;
-        
-    }
-</style>
--->
+
 <!--Bootstrap JS-->
 <script defer
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
@@ -26,3 +17,4 @@
 </script>
 <!-- Custom JS -->
 <script defer src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
