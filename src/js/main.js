@@ -19,6 +19,17 @@ function registerEventListeners()
     {
         console.log("No imgs found")
     }
+
+    // next
+    var popup = document.getElementById("popup")
+
+    if (popup != null && popup.length > 0)
+    {
+        popup.addEventListener("click", () => {
+            poupIframe.src()
+        })
+    }
+
 }
 
 function thumbnail(e)
